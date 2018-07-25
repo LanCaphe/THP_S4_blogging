@@ -20,7 +20,7 @@ end
 5.times do |index|
   a = rand(1..10)
   b = rand(1..10)
-  comment = Comment.create(content: Faker::BossaNova.song, user_id: a, article_id: b)
+  comment = Comment.create(content_comment: Faker::BossaNova.song, user_id: a, article_id: b)
 end
 # On génére des likes
 15.times do |index|
