@@ -16,8 +16,10 @@ ActiveRecord::Schema.define(version: 2018_07_25_163813) do
     t.string "title"
     t.string "content"
     t.integer "user_id"
+    t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_articles_on_category_id"
     t.index ["user_id"], name: "index_articles_on_user_id"
   end
 
