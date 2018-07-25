@@ -17,7 +17,7 @@ end
   category = Category.create(name: Faker::Hobbit.character)
 end
 #On crée 5 faux commentaires
-5.times do |index|
+15.times do |index|
   a = rand(1..10)
   b = rand(1..10)
   comment = Comment.create(content_comment: Faker::BossaNova.song, user_id: a, article_id: b)

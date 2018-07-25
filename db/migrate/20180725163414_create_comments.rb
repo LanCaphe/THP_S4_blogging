@@ -5,7 +5,7 @@ class CreateComments < ActiveRecord::Migration[5.2]
 
       t.belongs_to :article, index: true
       t.belongs_to :user, index: true
-      t.string :content_comment
+      t.text :content_comment
 
       t.timestamps
     end

@@ -5,7 +5,7 @@ class CreateArticles < ActiveRecord::Migration[5.2]
 #chaque article a un contenu et un titre.Ils proviennent d'un user
 #et une catégorie.
     	t.string :title
-    	t.string :content
+    	t.text :content
     	t.belongs_to :user, index: true
     	t.belongs_to :category, index: true
 	    t.timestamps
